@@ -2,16 +2,23 @@
 
 <div>
   <about :about="about"/>
+  <posts :articles="articles"/>
 </div>
 </template>
 
 <script>
 export default {
   async asyncData ({ $content, params }) {
+    const articles =  await $content('articles',params.slug)
+    .only(['title','description','img','slug','author'])
+    .sortBy('createdAt','asc')
+    .limit(1)
+    .fetch()
     const about = await $content('about')
       .fetch()
     return {
-      about
+      about, 
+      articles
             //$content.params.slug
       //this.$route
     }
