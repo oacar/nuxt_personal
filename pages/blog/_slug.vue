@@ -18,8 +18,67 @@
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     }
+ },
+ head() {
+  return {
+    title: this.article.title,
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: this.article.description,
+      },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: this.article.title,
+      },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: this.article.description,
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "article",
+      },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content: this.article.title,
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content: this.article.description,
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: this.article.image,
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: this.article.image,
+      },
+      {
+        property: "article:published_time",
+        content: this.article.createdAt,
+      },
+      {
+        property: "article:modified_time",
+        content: this.article.updatedAt,
+      },
+      {
+        property: "article:tag",
+        content: this.article.tags ? this.article.tags.toString() : "",
+      }
+    ],
+  };
+}
  }
-  }
 </script>
 <style>
   .nuxt-content h1 {

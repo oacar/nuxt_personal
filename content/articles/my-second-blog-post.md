@@ -6,6 +6,9 @@ alt: my first blog post
 author: 
     name: Omer Acar
     bio: Data scientist
+tags:
+    nuxt
+    js
 ---
 
 
