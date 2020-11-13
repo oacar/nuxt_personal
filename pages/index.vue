@@ -1,11 +1,21 @@
 <template>
 
 <div>
+  <about :about="about"/>
 </div>
 </template>
 
 <script>
 export default {
+  async asyncData ({ $content, params }) {
+    const about = await $content('about')
+      .fetch()
+    return {
+      about
+            //$content.params.slug
+      //this.$route
+    }
+  }
 }
 </script>
 
