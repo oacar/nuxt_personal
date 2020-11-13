@@ -15,8 +15,8 @@
             </div>
         </div>
         
-        <div class="mr-8 max-w-xs">
-            <div class="description-paragraph">{{about.description}}</div>
+        <div class="flex flex-col justify-center align-center">
+            <span class="description-paragraph leading-loose">{{about.description}}</span>
         </div>
 
     </div>

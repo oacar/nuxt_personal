@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-xl m-auto items-center">
+  <div class="max-w-3xl m-auto items-center">
     <Header/>
     <Nuxt />
   </div>
