@@ -1,14 +1,11 @@
 ---
-title: My Second Blog Post
+title: My Third Blog Post
 description: Learning how to use @nuxt/content to create a blog
-img: index.png
+img:  index.png
 alt: my first blog post
 author: 
     name: Omer Acar
     bio: Data scientist
-tags:
-    nuxt
-    js
 ---
 
 

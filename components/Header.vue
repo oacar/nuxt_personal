@@ -1,7 +1,7 @@
 
 <template>
   <div class="navBar flex m-auto z-999 sticky h-auto my-12 flex-row justify-between">
-        <h2>Hello world</h2>
+        <NuxtLink to="/" class="no-underline  hover:underline text-orange-800 text-lg font-bold">Omer Acar</NuxtLink>
     <nav class = "sm:flex flex-col sm:flex-row sm:w-auto w-full order-last sm:order-none my-4 sm:my-0 "> 
         <ul class="flex justify-between"> 
             <li v-for="item in mainNavItems" :key="item.id">
@@ -19,7 +19,7 @@
 <script>
 const mainNavItems = [
   {
-    title: 'About Me',
+    title: 'Home',
     slug: '/'
   },
   {
