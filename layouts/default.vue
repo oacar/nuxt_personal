@@ -1,7 +1,8 @@
 <template>
-  <div class="max-w-3xl m-auto items-center">
+  <div class="items-center px-64">
     <Header/>
-    <Nuxt />
+    <Nuxt class="" />
+    <Footer class="bg-gray-100"/>
   </div>
 </template>
 

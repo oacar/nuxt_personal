@@ -2,7 +2,7 @@
 
 <div>
   <about :about="about"/>
-  <posts :articles="articles"/>
+  <posts :articles="articles" :isBlog=true title="Recent Posts" />
 </div>
 </template>
 

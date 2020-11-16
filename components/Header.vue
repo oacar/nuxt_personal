@@ -1,6 +1,7 @@
 
 <template>
-  <div class="navBar flex m-auto z-999 sticky h-auto my-12 flex-row justify-between">
+<div class="bg-gray-300">
+  <div class="navBar  flex  z-999 sticky h-auto my-12 flex-row justify-between">
         <NuxtLink to="/" class="no-underline  hover:underline text-orange-800 text-lg font-bold">Omer Acar</NuxtLink>
     <nav class = "sm:flex flex-col sm:flex-row sm:w-auto w-full order-last sm:order-none my-4 sm:my-0 "> 
         <ul class="flex justify-between"> 
@@ -13,6 +14,7 @@
     </ul>
 
     </nav>
+  </div>
   </div>
 </template>
 
@@ -29,6 +31,10 @@ const mainNavItems = [
   {
     title: 'Blog',
     slug: '/blog/'
+  },
+  {
+    title: 'Portfolio',
+    slug: '/portfolio'
   },
   {
     title: 'Contact Me',

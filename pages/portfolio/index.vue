@@ -1,18 +1,16 @@
 <template>
 <div>
-  <posts :articles="articles" :isBlog=true title="Blog Posts" ></posts>
+  <posts :articles="portfolioItems" :isBlog=false title="Projects"></posts>
 </div>
 </template>
 
 <script>
 export default {
      async asyncData({$content, params}){
-    const articles =  await $content('articles',params.slug)
-    .only(['title','description','img','slug','author'])
-    .sortBy('createdAt','asc')
+    const portfolioItems =  await $content('portfolio',params.slug)
     .fetch()
       return{
-articles
+          portfolioItems
       } 
     }
   }

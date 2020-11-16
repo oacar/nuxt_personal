@@ -104,16 +104,17 @@
 
 <template>
   <article>
-    <h1 class="bg-blue-500">{{ article.title }}</h1>
+    <h1 class="bg-blue-100 font-bold text-2xl py-4">{{ article.title }}</h1>
     <p>{{ article.description }}</p>
-    <nav>
-      <ol class="list-decimal">
-        <li v-for="link of article.toc" :key="link.id" :class="{ 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }"
+    <!-- <nav>
+      <h1>Table of Contents</h1>
+      <ul class="list-disc">
+        <li v-for="link of article.toc" :key="link.id" :class="{ 'py-2 font-bold': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }"
 >
          <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
         </li>
-    </ol>
-    </nav>
+    </ul>
+    </nav> -->
 
     <img :src="article.img" :alt="article.alt" />
 
