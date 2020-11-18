@@ -2,7 +2,7 @@
    <div class="mt-20 text-center">
 <footer class="site-footer">
   <p class="powered-by text-xl font-bold">
-    <nuxt-link to="license">LICENSE: CC-BY-SA <br> 
+    <nuxt-link to="/license">LICENSE: CC-BY-SA <br> 
     <i><font-awesome-icon :icon='["fab","creative-commons"]'/></i>
     <i><font-awesome-icon :icon='["fab","creative-commons-by"]'/></i>
     <i><font-awesome-icon :icon='["fab","creative-commons-sa"]'/></i>
