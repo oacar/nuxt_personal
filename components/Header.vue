@@ -24,10 +24,10 @@ const mainNavItems = [
     title: 'Home',
     slug: '/'
   },
-  {
-    title: 'Resume',
-    slug: '/resume/'
-  },
+//  {
+//   title: 'Resume',
+//    slug: '/resume/'
+//  },
   {
     title: 'Blog',
     slug: '/blog/'
@@ -35,11 +35,11 @@ const mainNavItems = [
   {
     title: 'Portfolio',
     slug: '/portfolio'
-  },
-  {
-    title: 'Contact Me',
-    slug: '/contact/'
   }
+  //{
+   // title: 'Contact Me',
+   // slug: '/contact/'
+  //}
 ];
 export default {
     data: function () {
